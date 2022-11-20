@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage1</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          
+  'sm': '640px',
+  // => @media (min-width: 640px) { ... }
+
+  'md': '768px',
+  // => @media (min-width: 768px) { ... }
+
+  'lg': '1024px',
+  // => @media (min-width: 1024px) { ... }
+
+  'xl': '1280px',
+  // => @media (min-width: 1280px) { ... }
+
+  '2xl': '1536px',
+  // => @media (min-width: 1536px) { ... }
+},
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    };
+  </script>
+<body>
+    <header class="flex justify-between items-center flex-wrap">
+
+    <img width="170px" src="https://i.pinimg.com/originals/cf/3d/de/cf3ddea09792b8bffe3c4d9407679361.jpg" alt="" srcset="">
+    <div class="gap-40 flex-wrap  ">
+    <a class="text-lime-600 mr-8 hover:text-black" href="">LOG IN</a>
+    <button class="bg-lime-600 text-white p-2 mr-4 rounded-md hover:bg-black">POST A JOB</button>
+</div>
+    </header>
+    <section class="flex items-center sm:flex-row flex-col p-4">
+        <div class="text-center sm:text-start sm:w-6/12 w-full mt-2 lg:-mt-20">
+            <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium">Find the best Content <br class="hidden lg:inline-block"> Writing Jobs</h1>
+            <p>Paid Content Writing Jobs to work from home,remotely,freelance,contract and full time. Join our weekly newsletter.</p>
+            <input type="number" placeholder="Your Contact Number" class="border-2 border-slate-600 h-8 p-2 mt-2 w-56"> <br>
+            <input type="text" placeholder="Your Email Address" class="border-2 border-slate-600 h-8 p-2 mt-2 w-56"> <br>
+            <button class="bg-lime-600 text-white p-2 mr-4 rounded-md mt-4 w-56 p-2 hover:bg-black ">Send me Writing Jobs</button>
+        </div>
+        <div class="w-6/12">
+        <img class=" ml-2  sm:ml-48 md:-mt-12" width="500px" src="Screenshot 2022-11-20 130543.png" alt="" srcset="">
+    
+        </div>
+    </section>
+</body>
+</html>
